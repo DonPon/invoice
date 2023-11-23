@@ -69,7 +69,7 @@ def create_pdf(subject, text, month, name):
 month = input("ENTER THE MONTH: ")
 
 # Open the YAML file
-with open("tenants.yaml") as f:
+with open("tenants.yaml", encoding="utf-8") as f:
     tenants = yaml.load(f, Loader=yaml.FullLoader)
 
 # Get the current year
